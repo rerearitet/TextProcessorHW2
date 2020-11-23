@@ -20,9 +20,9 @@ public class JsonApplicationContext implements ApplicationContext {
     private static final JSONParser jsonParser = new JSONParser();
 
     public static void main(String[] args) {
-        JsonApplicationContext jap = new JsonApplicationContext();
-        ((InMemoryTextProcessor) jap.getBean("textProcessor")).save("1", "2");
-        System.out.println(((InMemoryTextProcessor) jap.getBean("textProcessor")).getByKey("1"));
+        JsonApplicationContext jac = new JsonApplicationContext();
+        ((InMemoryTextProcessor) jac.getBean("textProcessor")).save("1", "2");
+        System.out.println(((InMemoryTextProcessor) jac.getBean("textProcessor")).getByKey("1"));
     }
 
     public JsonApplicationContext() {
