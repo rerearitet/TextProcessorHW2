@@ -14,7 +14,7 @@ public class PropertiesApplicationContext implements ApplicationContext {
     public static void main(String[] args) {
         PropertiesApplicationContext pac = new PropertiesApplicationContext();
         ((InMemoryTextProcessor) pac.getBean("textProcessor")).save("1", "2");
-        System.out.println(((InMemoryTextProcessor) pap.getBean("textProcessor")).getByKey("1"));
+        System.out.println(((InMemoryTextProcessor) paс.getBean("textProcessor")).getByKey("1"));
     }
 
     public PropertiesApplicationContext() {
